@@ -1,0 +1,40 @@
+devices:
+  MainRouter:
+    connections:
+      cli:
+        ip: 172.42.69.1
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENC{w5PDosOUw5fDosKQwpbCmMKH}'
+        username: cisco
+      enable:
+        password: ''
+    os: iosxe
+    type: iosxe
+  SideA_Router:
+    connections:
+      cli:
+        ip: 10.69.42.2
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENC{w5PDosOUw5fDosKQwpbCmMKH}'
+        username: cisco
+      enable:
+        password: ''
+    os: iosxe
+    type: iosxe
+  SideB_Router:
+    connections:
+      cli:
+        ip: 10.69.43.2
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENC{w5PDosOUw5fDosKQwpbCmMKH}'
+        username: cisco
+      enable:
+        password: ''
+    os: iosxe
+    type: iosxe
