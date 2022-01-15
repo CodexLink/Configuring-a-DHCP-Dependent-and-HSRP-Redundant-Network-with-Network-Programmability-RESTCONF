@@ -1,0 +1,129 @@
+{
+  "_exclude": [
+    "age"
+  ],
+  "vrf": {
+    "default": {
+      "address_family": {
+        "ipv4": {
+          "instance": {
+            "1": {
+              "areas": {
+                "0.0.0.0": {
+                  "database": {
+                    "lsa_types": {
+                      "1": {
+                        "lsa_type": 1,
+                        "lsas": {
+                          "1.1.1.1": {
+                            "adv_router": "1.1.1.1",
+                            "lsa_id": "1.1.1.1",
+                            "ospfv2": {
+                              "header": {
+                                "adv_router": "1.1.1.1",
+                                "age": 1496,
+                                "checksum": "0x00DA7C",
+                                "link_count": 3,
+                                "lsa_id": "1.1.1.1",
+                                "seq_num": "0x8000000A"
+                              }
+                            }
+                          },
+                          "3.3.3.3": {
+                            "adv_router": "3.3.3.3",
+                            "lsa_id": "3.3.3.3",
+                            "ospfv2": {
+                              "header": {
+                                "adv_router": "3.3.3.3",
+                                "age": 1488,
+                                "checksum": "0x00E363",
+                                "link_count": 3,
+                                "lsa_id": "3.3.3.3",
+                                "seq_num": "0x8000000E"
+                              }
+                            }
+                          },
+                          "5.5.5.5": {
+                            "adv_router": "5.5.5.5",
+                            "lsa_id": "5.5.5.5",
+                            "ospfv2": {
+                              "header": {
+                                "adv_router": "5.5.5.5",
+                                "age": 1525,
+                                "checksum": "0x0016EF",
+                                "link_count": 2,
+                                "lsa_id": "5.5.5.5",
+                                "seq_num": "0x80000008"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "2": {
+                        "lsa_type": 2,
+                        "lsas": {
+                          "10.69.42.1": {
+                            "adv_router": "5.5.5.5",
+                            "lsa_id": "10.69.42.1",
+                            "ospfv2": {
+                              "header": {
+                                "adv_router": "5.5.5.5",
+                                "age": 1530,
+                                "checksum": "0x00840E",
+                                "lsa_id": "10.69.42.1",
+                                "seq_num": "0x80000001"
+                              }
+                            }
+                          },
+                          "10.69.43.1": {
+                            "adv_router": "5.5.5.5",
+                            "lsa_id": "10.69.43.1",
+                            "ospfv2": {
+                              "header": {
+                                "adv_router": "5.5.5.5",
+                                "age": 1530,
+                                "checksum": "0x001584",
+                                "lsa_id": "10.69.43.1",
+                                "seq_num": "0x80000001"
+                              }
+                            }
+                          },
+                          "10.69.44.1": {
+                            "adv_router": "3.3.3.3",
+                            "lsa_id": "10.69.44.1",
+                            "ospfv2": {
+                              "header": {
+                                "adv_router": "3.3.3.3",
+                                "age": 1500,
+                                "checksum": "0x001A8A",
+                                "lsa_id": "10.69.44.1",
+                                "seq_num": "0x80000001"
+                              }
+                            }
+                          },
+                          "172.16.30.1": {
+                            "adv_router": "3.3.3.3",
+                            "lsa_id": "172.16.30.1",
+                            "ospfv2": {
+                              "header": {
+                                "adv_router": "3.3.3.3",
+                                "age": 1500,
+                                "checksum": "0x00033F",
+                                "lsa_id": "172.16.30.1",
+                                "seq_num": "0x80000001"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

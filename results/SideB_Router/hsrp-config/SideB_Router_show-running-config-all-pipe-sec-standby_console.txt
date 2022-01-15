@@ -1,0 +1,11 @@
++++ SideB_Router with via 'cli': executing command 'show running-config all | sec standby' +++
+show running-config all | sec standby
+ standby redirect
+ standby bfd all-interfaces
+ standby sso
+  no standby console enable
+  no standby console lock
+ standby version 2
+ standby 1 ip 172.16.30.254
+ standby 1 priority 169
+SideB_Router#

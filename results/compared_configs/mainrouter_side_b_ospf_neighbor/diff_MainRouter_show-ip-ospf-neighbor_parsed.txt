@@ -1,0 +1,29 @@
+--- ./results/MainRouter/ospf-neighbors/MainRouter_show-ip-ospf-neighbor_parsed.txt
++++ ./results/SideB_Router/ospf-neighbors/SideB_Router_show-ip-ospf-neighbor_parsed.txt
+ interfaces:
+  GigabitEthernet2:
+   neighbors:
+    3.3.3.3:
+-    address: 10.69.42.2
++    address: 10.69.44.1
+-    state: FULL/BDR
++    state: FULL/DR
+  GigabitEthernet3:
+   neighbors:
+-   1.1.1.1:
+-    address: 10.69.43.2
+-    dead_time: 00:00:38
+-    priority: 1
+-    state: FULL/BDR
++   3.3.3.3:
++    address: 172.16.30.1
++    dead_time: 00:00:38
++    priority: 1
++    state: FULL/DR
++ GigabitEthernet1:
++  neighbors:
++   5.5.5.5:
++    address: 10.69.43.1
++    dead_time: 00:00:38
++    priority: 1
++    state: FULL/DR

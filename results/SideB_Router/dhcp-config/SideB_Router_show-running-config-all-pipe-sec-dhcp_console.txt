@@ -1,0 +1,44 @@
++++ SideB_Router with via 'cli': executing command 'show running-config all | sec dhcp' +++
+show running-config all | sec dhcp
+service dhcp
+platform punt-policer dhcp-snoop 437
+platform punt-policer dhcp-snoop 1000 high
+platform trace runtime slot forwarding-manager bay notice process dhcp-snoop module F0 level 0
+platform trace runtime slot forwarding-manager bay notice process dhcp-snoop module F1 level 0
+platform trace runtime slot forwarding-manager bay notice process dhcp-snoop module R0 level 0
+platform trace runtime slot forwarding-manager bay notice process dhcp-snoop module R0 level 1
+platform trace runtime slot forwarding-manager bay notice process dhcp-snoop module R1 level 0
+platform trace runtime slot forwarding-manager bay notice process dhcp-snoop module R1 level 1
+ip dhcp-server query lease retries 2
+ip dhcp-server query lease timeout 10
+ ip dhcp-client broadcast-flag
+ip dhcp-client default-router distance 254
+ip dhcp relay information policy replace
+ip dhcp relay information check
+ip dhcp use class
+ip dhcp use vrf connected
+ip dhcp binding cleanup interval 120
+ip dhcp compatibility suboption link-selection cisco
+ip dhcp compatibility suboption server-override cisco
+ip dhcp conflict logging
+ip dhcp excluded-address 172.16.30.1 172.16.30.127
+ip dhcp excluded-address 172.16.30.254
+ip dhcp ping packets 2
+ip dhcp ping timeout 500
+ip dhcp pool CLIENT_SIDE_B_REDUNDANT_LAN_POOL
+ network 172.16.30.0 255.255.255.0
+     override utilization high 100
+     override utilization low 0
+ default-router 172.16.30.2 
+ ip dhcp auto-broadcast
+ipv6 dhcp-relay trust-all
+no ipv6 dhcp-relay option vpn
+ipv6 dhcp-relay option client-link-addr
+ipv6 dhcp ping packets 0
+ipv6 dhcp iapd-route-add
+no ipv6 dhcp iana-route-add
+ipv6 dhcp ppp terminate
+ipv6 dhcp ppp framed-prefix cache
+no ipv6 dhcp server vrf enable
+ ip address dhcp
+SideB_Router#

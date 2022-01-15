@@ -1,0 +1,21 @@
++++ MainRouter with via 'cli': executing command 'show running-config all | sec dhcp pool' +++
+show running-config all | sec dhcp pool
+ip dhcp pool ADMIN_ACCESS_LAN_IP_POOL
+ network 172.42.69.0 255.255.255.240
+     override utilization high 100
+     override utilization low 0
+ domain-name final_case_study.com
+ default-router 172.42.69.1 
+ip dhcp pool ROUTER_PRIMARY_RESERVED_POOL
+ network 10.69.42.0 255.255.255.248
+     override utilization high 100
+     override utilization low 0
+ default-router 10.69.42.1 
+ domain-name final_case_study.com
+ip dhcp pool ROUTER_SECONDARY_RESERVED_POOL
+ network 10.69.43.0 255.255.255.248
+     override utilization high 100
+     override utilization low 0
+ default-router 10.69.43.1 
+ domain-name final_case_study.com
+MainRouter#

@@ -1,0 +1,47 @@
++++ SideA_Router with via 'cli': executing command 'show running-config all | sec router' +++
+show running-config all | sec router
+ip pgm router elimination-interval 2
+ip dhcp-client default-router distance 254
+ default-router 172.16.30.1 
+router ospf 1
+ router-id 3.3.3.3
+ priority 64
+ queue-depth update 200
+ queue-depth hello unlimited
+ compatible rfc1583
+ no compatible rfc1587
+ compatible rfc5243
+ no interface-id snmp-if-index
+ no ignore lsa mospf
+ adjacency stagger 300 300
+ event-log size 1000
+ log-adjacency-changes
+ discard-route external 254 internal 110
+ no local-rib-criteria
+ auto-cost reference-bandwidth 100
+ limit retransmissions dc 24 non-dc 24
+ no shutdown
+ no prefix-suppression
+ no nsr
+ nsf cisco helper
+ nsf ietf helper
+ capability opaque
+ capability lls
+ capability transit
+ no area 0 authentication
+ area 0 default-cost 1
+ timers throttle spf 50 200 5000
+ timers throttle lsa 50 200 5000
+ timers lsa arrival 100
+ timers pacing lsa-group 240
+ timers pacing flood 33
+ timers pacing retransmission 66
+ network 10.69.42.0 0.0.0.3 area 0
+ network 10.69.43.0 0.0.0.3 area 0
+ network 10.69.44.0 0.0.0.3 area 0
+ network 172.16.30.0 0.0.0.255 area 0
+ maximum-paths 4
+ default-metric 20
+ distance 110
+ no bfd all-interfaces
+SideA_Router#

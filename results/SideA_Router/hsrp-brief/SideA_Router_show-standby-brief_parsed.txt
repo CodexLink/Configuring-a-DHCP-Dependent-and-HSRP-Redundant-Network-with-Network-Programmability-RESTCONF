@@ -1,0 +1,14 @@
+{
+  "_exclude": [],
+  "interface": {
+    "Gi3": {
+      "active": "local",
+      "grp": 1,
+      "is_preempt_enabled": true,
+      "priority": 240,
+      "standby": "172.16.30.2",
+      "state": "Active",
+      "virtual_ip": "172.16.30.254"
+    }
+  }
+}

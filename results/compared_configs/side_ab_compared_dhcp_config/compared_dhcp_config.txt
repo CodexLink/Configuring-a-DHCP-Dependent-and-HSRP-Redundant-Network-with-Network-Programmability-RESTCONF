@@ -1,0 +1,21 @@
+1c1
+< +++ SideA_Router with via 'cli': executing command 'show running-config all | sec dhcp' +++
+---
+> +++ SideB_Router with via 'cli': executing command 'show running-config all | sec dhcp' +++
+24c24,25
+< ip dhcp excluded-address 172.16.30.128 172.16.30.254
+---
+> ip dhcp excluded-address 172.16.30.1 172.16.30.127
+> ip dhcp excluded-address 172.16.30.254
+27c28
+< ip dhcp pool CLIENT_SIDE_A_REDUNDANT_LAN_POOL
+---
+> ip dhcp pool CLIENT_SIDE_B_REDUNDANT_LAN_POOL
+31c32
+<  default-router 172.16.30.1 
+---
+>  default-router 172.16.30.2 
+43c44
+< SideA_Router#
+---
+> SideB_Router#

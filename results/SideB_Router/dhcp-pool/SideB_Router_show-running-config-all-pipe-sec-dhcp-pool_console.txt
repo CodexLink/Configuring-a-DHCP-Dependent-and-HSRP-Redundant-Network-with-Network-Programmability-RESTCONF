@@ -1,0 +1,8 @@
++++ SideB_Router with via 'cli': executing command 'show running-config all | sec dhcp pool' +++
+show running-config all | sec dhcp pool
+ip dhcp pool CLIENT_SIDE_B_REDUNDANT_LAN_POOL
+ network 172.16.30.0 255.255.255.0
+     override utilization high 100
+     override utilization low 0
+ default-router 172.16.30.2 
+SideB_Router#

@@ -1,0 +1,7 @@
++++ SideB_Router with via 'cli': executing command 'show standby brief' +++
+show standby brief
+                     P indicates configured to preempt.
+                     |
+Interface   Grp  Pri P State   Active          Standby         Virtual IP
+Gi3         1    169   Standby 172.16.30.1     local           172.16.30.254
+SideB_Router#

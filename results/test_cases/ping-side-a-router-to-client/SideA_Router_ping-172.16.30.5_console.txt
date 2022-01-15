@@ -1,0 +1,7 @@
++++ SideA_Router with via 'cli': executing command 'ping 172.16.30.5' +++
+ping 172.16.30.5
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 172.16.30.5, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 1/1/2 ms
+SideA_Router#

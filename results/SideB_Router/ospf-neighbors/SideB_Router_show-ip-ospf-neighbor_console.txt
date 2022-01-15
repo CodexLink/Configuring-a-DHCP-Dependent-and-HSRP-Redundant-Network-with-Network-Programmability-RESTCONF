@@ -1,0 +1,8 @@
++++ SideB_Router with via 'cli': executing command 'show ip ospf neighbor' +++
+show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+5.5.5.5           1   FULL/DR         00:00:38    10.69.43.1      GigabitEthernet1
+3.3.3.3           1   FULL/DR         00:00:38    172.16.30.1     GigabitEthernet3
+3.3.3.3           1   FULL/DR         00:00:32    10.69.44.1      GigabitEthernet2
+SideB_Router#

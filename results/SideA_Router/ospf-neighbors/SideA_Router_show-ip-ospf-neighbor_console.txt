@@ -1,0 +1,8 @@
++++ SideA_Router with via 'cli': executing command 'show ip ospf neighbor' +++
+show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+5.5.5.5           1   FULL/DR         00:00:31    10.69.42.1      GigabitEthernet1
+1.1.1.1           1   FULL/BDR        00:00:33    172.16.30.2     GigabitEthernet3
+1.1.1.1           1   FULL/BDR        00:00:39    10.69.44.2      GigabitEthernet2
+SideA_Router#

@@ -1,0 +1,22 @@
+{
+  "_exclude": [],
+  "ping": {
+    "address": "10.69.42.2",
+    "data_bytes": 100,
+    "repeat": 5,
+    "result_per_line": [
+      "!!!!!"
+    ],
+    "statistics": {
+      "received": 5,
+      "round_trip": {
+        "avg_ms": 2,
+        "max_ms": 1,
+        "min_ms": 1
+      },
+      "send": 5,
+      "success_rate_percent": 100.0
+    },
+    "timeout_secs": 2
+  }
+}

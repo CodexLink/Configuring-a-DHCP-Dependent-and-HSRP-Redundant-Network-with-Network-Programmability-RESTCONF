@@ -1,0 +1,23 @@
+{
+  "_exclude": [],
+  "interfaces": {
+    "GigabitEthernet1": {
+      "carrier_delay": 2,
+      "load_interval": 300,
+      "medium_p2p": false,
+      "shutdown": false
+    },
+    "GigabitEthernet2": {
+      "carrier_delay": 2,
+      "load_interval": 300,
+      "medium_p2p": false,
+      "shutdown": false
+    },
+    "GigabitEthernet3": {
+      "carrier_delay": 2,
+      "load_interval": 300,
+      "medium_p2p": false,
+      "shutdown": false
+    }
+  }
+}

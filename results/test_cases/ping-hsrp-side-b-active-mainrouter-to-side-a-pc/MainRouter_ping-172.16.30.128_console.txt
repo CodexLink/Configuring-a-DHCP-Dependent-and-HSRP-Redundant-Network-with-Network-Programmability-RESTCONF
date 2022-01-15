@@ -1,0 +1,7 @@
++++ MainRouter with via 'cli': executing command 'ping 172.16.30.128' +++
+ping 172.16.30.128
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 172.16.30.128, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 2/42/204 ms
+MainRouter#

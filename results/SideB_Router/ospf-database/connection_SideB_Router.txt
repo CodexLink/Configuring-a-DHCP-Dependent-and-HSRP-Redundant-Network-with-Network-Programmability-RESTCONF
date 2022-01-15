@@ -1,0 +1,122 @@
+
+2022-01-15 12:57:21,340: %UNICON-INFO: +++ SideB_Router logfile ./results/SideB_Router/ospf-database/connection_SideB_Router.txt +++
+
+2022-01-15 12:57:21,340: %UNICON-INFO: +++ Unicon plugin iosxe +++
+Warning: Permanently added '10.69.43.2' (RSA) to the list of known hosts.
+
+
+2022-01-15 12:57:21,469: %UNICON-INFO: +++ connection to spawn: ssh -l cisco 10.69.43.2, id: 140241134575184 +++
+
+2022-01-15 12:57:21,470: %UNICON-INFO: connection to SideB_Router
+Password: 
+
+*                                           *
+**                                         **
+***                                       ***
+***  Cisco Networking Academy             ***
+***                                       ***
+***  This software is provided for        ***
+***   Educational Purposes                ***
+***    Only in Networking Academies       ***
+***                                       ***
+**                                         **
+*                                           *
+
+
+
+SideB_Router#
+
+2022-01-15 12:57:21,705: %UNICON-INFO: +++ initializing handle +++
+
+2022-01-15 12:57:21,778: %UNICON-INFO: +++ SideB_Router with via 'cli': executing command 'term length 0' +++
+term length 0
+SideB_Router#
+
+2022-01-15 12:57:22,028: %UNICON-INFO: +++ SideB_Router with via 'cli': executing command 'term width 0' +++
+term width 0
+SideB_Router#
+
+2022-01-15 12:57:22,299: %UNICON-INFO: +++ SideB_Router with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 16.09.05
+Cisco IOS Software [Fuji], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.9.5, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Thu 30-Jan-20 18:48 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2020 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+SideB_Router uptime is 27 minutes
+Uptime for this control processor is 30 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: reload
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: ax
+License Type: Default. No valid license found.
+Next reload license Level: ax
+
+
+Smart Licensing Status: Smart Licensing is DISABLED
+
+cisco CSR1000V (VXE) processor (revision VXE) with 819308K/3075K bytes of memory.
+Processor board ID 91X0ZVKB3QO
+3 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+2441432K bytes of physical memory.
+7774207K bytes of virtual hard disk at bootflash:.
+0K bytes of WebUI ODM Files at webui:.
+
+Configuration register is 0x2102
+
+SideB_Router#
+
+2022-01-15 12:57:23,593: %UNICON-INFO: +++ SideB_Router with via 'cli': executing command 'show ip ospf database' +++
+show ip ospf database
+
+            OSPF Router with ID (1.1.1.1) (Process ID 1)
+
+		Router Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum Link count
+1.1.1.1         1.1.1.1         1581        0x8000000A 0x00DA7C 3         
+3.3.3.3         3.3.3.3         1574        0x8000000E 0x00E363 3         
+5.5.5.5         5.5.5.5         1612        0x80000008 0x0016EF 2         
+
+		Net Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+10.69.42.1      5.5.5.5         1617        0x80000001 0x00840E
+10.69.43.1      5.5.5.5         1617        0x80000001 0x001584
+10.69.44.1      3.3.3.3         1586        0x80000001 0x001A8A
+172.16.30.1     3.3.3.3         1586        0x80000001 0x00033F
+SideB_Router#

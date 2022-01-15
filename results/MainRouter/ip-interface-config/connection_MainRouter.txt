@@ -1,0 +1,515 @@
+
+2022-01-15 12:55:46,251: %UNICON-INFO: +++ MainRouter logfile ./results/MainRouter/ip-interface-config/connection_MainRouter.txt +++
+
+2022-01-15 12:55:46,251: %UNICON-INFO: +++ Unicon plugin iosxe +++
+Warning: Permanently added '172.42.69.1' (RSA) to the list of known hosts.
+
+
+2022-01-15 12:55:46,376: %UNICON-INFO: +++ connection to spawn: ssh -l cisco 172.42.69.1, id: 140350465949264 +++
+
+2022-01-15 12:55:46,376: %UNICON-INFO: connection to MainRouter
+Password: 
+
+*                                           *
+**                                         **
+***                                       ***
+***  Cisco Networking Academy             ***
+***                                       ***
+***  This software is provided for        ***
+***   Educational Purposes                ***
+***    Only in Networking Academies       ***
+***                                       ***
+**                                         **
+*                                           *
+
+
+
+MainRouter#
+
+2022-01-15 12:55:46,615: %UNICON-INFO: +++ initializing handle +++
+
+2022-01-15 12:55:46,691: %UNICON-INFO: +++ MainRouter with via 'cli': executing command 'term length 0' +++
+term length 0
+MainRouter#
+
+2022-01-15 12:55:46,916: %UNICON-INFO: +++ MainRouter with via 'cli': executing command 'term width 0' +++
+term width 0
+MainRouter#
+
+2022-01-15 12:55:47,140: %UNICON-INFO: +++ MainRouter with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 16.09.05
+Cisco IOS Software [Fuji], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.9.5, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Thu 30-Jan-20 18:48 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2020 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+MainRouter uptime is 31 minutes
+Uptime for this control processor is 33 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: reload
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: ax
+License Type: Default. No valid license found.
+Next reload license Level: ax
+
+
+Smart Licensing Status: Smart Licensing is DISABLED
+
+cisco CSR1000V (VXE) processor (revision VXE) with 819308K/3075K bytes of memory.
+Processor board ID 9C47WCXGNON
+3 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+2441432K bytes of physical memory.
+7774207K bytes of virtual hard disk at bootflash:.
+0K bytes of WebUI ODM Files at webui:.
+
+Configuration register is 0x2102
+
+MainRouter#
+
+2022-01-15 12:55:48,268: %UNICON-INFO: +++ MainRouter with via 'cli': executing command 'show running-config all | sec interface' +++
+show running-config all | sec interface
+platform trace boottime slot interface-manager bay max process R0 level 0
+platform trace boottime slot interface-manager bay max process R0 level 1
+platform trace boottime slot interface-manager bay max process R1 level 0
+platform trace boottime slot interface-manager bay max process R1 level 1
+platform trace runtime slot forwarding-manager bay notice process interfaces module F0 level 0
+platform trace runtime slot forwarding-manager bay notice process interfaces module F1 level 0
+platform trace runtime slot forwarding-manager bay notice process interfaces module R0 level 0
+platform trace runtime slot forwarding-manager bay notice process interfaces module R0 level 1
+platform trace runtime slot forwarding-manager bay notice process interfaces module R1 level 0
+platform trace runtime slot forwarding-manager bay notice process interfaces module R1 level 1
+platform trace runtime slot interface-manager bay notice process all-modules module R0 level 0
+platform trace runtime slot interface-manager bay notice process all-modules module R0 level 1
+platform trace runtime slot interface-manager bay notice process all-modules module R1 level 0
+platform trace runtime slot interface-manager bay notice process all-modules module R1 level 1
+platform trace runtime slot interface-manager bay notice process aom module R0 level 0
+platform trace runtime slot interface-manager bay notice process aom module R0 level 1
+platform trace runtime slot interface-manager bay notice process aom module R1 level 0
+platform trace runtime slot interface-manager bay notice process aom module R1 level 1
+platform trace runtime slot interface-manager bay notice process backwalk module R0 level 0
+platform trace runtime slot interface-manager bay notice process backwalk module R0 level 1
+platform trace runtime slot interface-manager bay notice process backwalk module R1 level 0
+platform trace runtime slot interface-manager bay notice process backwalk module R1 level 1
+platform trace runtime slot interface-manager bay notice process bcrdu module R0 level 0
+platform trace runtime slot interface-manager bay notice process bcrdu module R0 level 1
+platform trace runtime slot interface-manager bay notice process bcrdu module R1 level 0
+platform trace runtime slot interface-manager bay notice process bcrdu module R1 level 1
+platform trace runtime slot interface-manager bay notice process bidb module R0 level 0
+platform trace runtime slot interface-manager bay notice process bidb module R0 level 1
+platform trace runtime slot interface-manager bay notice process bidb module R1 level 0
+platform trace runtime slot interface-manager bay notice process bidb module R1 level 1
+platform trace runtime slot interface-manager bay notice process bipc module R0 level 0
+platform trace runtime slot interface-manager bay notice process bipc module R0 level 1
+platform trace runtime slot interface-manager bay notice process bipc module R1 level 0
+platform trace runtime slot interface-manager bay notice process bipc module R1 level 1
+platform trace runtime slot interface-manager bay notice process bipc_tls module R0 level 0
+platform trace runtime slot interface-manager bay notice process bipc_tls module R0 level 1
+platform trace runtime slot interface-manager bay notice process bipc_tls module R1 level 0
+platform trace runtime slot interface-manager bay notice process bipc_tls module R1 level 1
+platform trace runtime slot interface-manager bay notice process bso module R0 level 0
+platform trace runtime slot interface-manager bay notice process bso module R0 level 1
+platform trace runtime slot interface-manager bay notice process bso module R1 level 0
+platform trace runtime slot interface-manager bay notice process bso module R1 level 1
+platform trace runtime slot interface-manager bay notice process btrace module R0 level 0
+platform trace runtime slot interface-manager bay notice process btrace module R0 level 1
+platform trace runtime slot interface-manager bay notice process btrace module R1 level 0
+platform trace runtime slot interface-manager bay notice process btrace module R1 level 1
+platform trace runtime slot interface-manager bay notice process cdllib module R0 level 0
+platform trace runtime slot interface-manager bay notice process cdllib module R0 level 1
+platform trace runtime slot interface-manager bay notice process cdllib module R1 level 0
+platform trace runtime slot interface-manager bay notice process cdllib module R1 level 1
+platform trace runtime slot interface-manager bay notice process chasfs module R0 level 0
+platform trace runtime slot interface-manager bay notice process chasfs module R0 level 1
+platform trace runtime slot interface-manager bay notice process chasfs module R1 level 0
+platform trace runtime slot interface-manager bay notice process chasfs module R1 level 1
+platform trace runtime slot interface-manager bay notice process cond_debug module R0 level 0
+platform trace runtime slot interface-manager bay notice process cond_debug module R0 level 1
+platform trace runtime slot interface-manager bay notice process cond_debug module R1 level 0
+platform trace runtime slot interface-manager bay notice process cond_debug module R1 level 1
+platform trace runtime slot interface-manager bay notice process crimson-oper module R0 level 0
+platform trace runtime slot interface-manager bay notice process crimson-oper module R0 level 1
+platform trace runtime slot interface-manager bay notice process crimson-oper module R1 level 0
+platform trace runtime slot interface-manager bay notice process crimson-oper module R1 level 1
+platform trace runtime slot interface-manager bay notice process dbal module R0 level 0
+platform trace runtime slot interface-manager bay notice process dbal module R0 level 1
+platform trace runtime slot interface-manager bay notice process dbal module R1 level 0
+platform trace runtime slot interface-manager bay notice process dbal module R1 level 1
+platform trace runtime slot interface-manager bay notice process dbdm module R0 level 0
+platform trace runtime slot interface-manager bay notice process dbdm module R0 level 1
+platform trace runtime slot interface-manager bay notice process dbdm module R1 level 0
+platform trace runtime slot interface-manager bay notice process dbdm module R1 level 1
+platform trace runtime slot interface-manager bay notice process evlib module R0 level 0
+platform trace runtime slot interface-manager bay notice process evlib module R0 level 1
+platform trace runtime slot interface-manager bay notice process evlib module R1 level 0
+platform trace runtime slot interface-manager bay notice process evlib module R1 level 1
+platform trace runtime slot interface-manager bay notice process evutil module R0 level 0
+platform trace runtime slot interface-manager bay notice process evutil module R0 level 1
+platform trace runtime slot interface-manager bay notice process evutil module R1 level 0
+platform trace runtime slot interface-manager bay notice process evutil module R1 level 1
+platform trace runtime slot interface-manager bay notice process green-be module R0 level 0
+platform trace runtime slot interface-manager bay notice process green-be module R0 level 1
+platform trace runtime slot interface-manager bay notice process green-be module R1 level 0
+platform trace runtime slot interface-manager bay notice process green-be module R1 level 1
+platform trace runtime slot interface-manager bay notice process green-fe module R0 level 0
+platform trace runtime slot interface-manager bay notice process green-fe module R0 level 1
+platform trace runtime slot interface-manager bay notice process green-fe module R1 level 0
+platform trace runtime slot interface-manager bay notice process green-fe module R1 level 1
+platform trace runtime slot interface-manager bay notice process imand module R0 level 0
+platform trace runtime slot interface-manager bay notice process imand module R0 level 1
+platform trace runtime slot interface-manager bay notice process imand module R1 level 0
+platform trace runtime slot interface-manager bay notice process imand module R1 level 1
+platform trace runtime slot interface-manager bay notice process mqipc module R0 level 0
+platform trace runtime slot interface-manager bay notice process mqipc module R0 level 1
+platform trace runtime slot interface-manager bay notice process mqipc module R1 level 0
+platform trace runtime slot interface-manager bay notice process mqipc module R1 level 1
+platform trace runtime slot interface-manager bay notice process netmap module R0 level 0
+platform trace runtime slot interface-manager bay notice process netmap module R0 level 1
+platform trace runtime slot interface-manager bay notice process netmap module R1 level 0
+platform trace runtime slot interface-manager bay notice process netmap module R1 level 1
+platform trace runtime slot interface-manager bay notice process oormon module R0 level 0
+platform trace runtime slot interface-manager bay notice process oormon module R0 level 1
+platform trace runtime slot interface-manager bay notice process oormon module R1 level 0
+platform trace runtime slot interface-manager bay notice process oormon module R1 level 1
+platform trace runtime slot interface-manager bay notice process prelib module R0 level 0
+platform trace runtime slot interface-manager bay notice process prelib module R0 level 1
+platform trace runtime slot interface-manager bay notice process prelib module R1 level 0
+platform trace runtime slot interface-manager bay notice process prelib module R1 level 1
+platform trace runtime slot interface-manager bay notice process services module R0 level 0
+platform trace runtime slot interface-manager bay notice process services module R0 level 1
+platform trace runtime slot interface-manager bay notice process services module R1 level 0
+platform trace runtime slot interface-manager bay notice process services module R1 level 1
+platform trace runtime slot interface-manager bay notice process tdldb-assist module R0 level 0
+platform trace runtime slot interface-manager bay notice process tdldb-assist module R0 level 1
+platform trace runtime slot interface-manager bay notice process tdldb-assist module R1 level 0
+platform trace runtime slot interface-manager bay notice process tdldb-assist module R1 level 1
+platform trace runtime slot interface-manager bay notice process tdldbpersist module R0 level 0
+platform trace runtime slot interface-manager bay notice process tdldbpersist module R0 level 1
+platform trace runtime slot interface-manager bay notice process tdldbpersist module R1 level 0
+platform trace runtime slot interface-manager bay notice process tdldbpersist module R1 level 1
+platform trace runtime slot interface-manager bay notice process tdlgc module R0 level 0
+platform trace runtime slot interface-manager bay notice process tdlgc module R0 level 1
+platform trace runtime slot interface-manager bay notice process tdlgc module R1 level 0
+platform trace runtime slot interface-manager bay notice process tdlgc module R1 level 1
+platform trace runtime slot interface-manager bay notice process tdllib module R0 level 0
+platform trace runtime slot interface-manager bay notice process tdllib module R0 level 1
+platform trace runtime slot interface-manager bay notice process tdllib module R1 level 0
+platform trace runtime slot interface-manager bay notice process tdllib module R1 level 1
+platform trace runtime slot interface-manager bay notice process ublock module R0 level 0
+platform trace runtime slot interface-manager bay notice process ublock module R0 level 1
+platform trace runtime slot interface-manager bay notice process ublock module R1 level 0
+platform trace runtime slot interface-manager bay notice process ublock module R1 level 1
+platform trace runtime slot interface-manager bay notice process uihandler module R0 level 0
+platform trace runtime slot interface-manager bay notice process uihandler module R0 level 1
+platform trace runtime slot interface-manager bay notice process uihandler module R1 level 0
+platform trace runtime slot interface-manager bay notice process uihandler module R1 level 1
+platform trace runtime slot interface-manager bay notice process uipeer module R0 level 0
+platform trace runtime slot interface-manager bay notice process uipeer module R0 level 1
+platform trace runtime slot interface-manager bay notice process uipeer module R1 level 0
+platform trace runtime slot interface-manager bay notice process uipeer module R1 level 1
+platform trace runtime slot interface-manager bay notice process uistatus module R0 level 0
+platform trace runtime slot interface-manager bay notice process uistatus module R0 level 1
+platform trace runtime slot interface-manager bay notice process uistatus module R1 level 0
+platform trace runtime slot interface-manager bay notice process uistatus module R1 level 1
+platform trace runtime slot interface-manager bay notice process xray module R0 level 0
+platform trace runtime slot interface-manager bay notice process xray module R0 level 1
+platform trace runtime slot interface-manager bay notice process xray module R1 level 0
+platform trace runtime slot interface-manager bay notice process xray module R1 level 1
+ standby bfd all-interfaces
+ip routing protocol purge interface
+ipv6 traffic interface-statistics
+no access-session interface-template sticky
+ route set interface
+interface GigabitEthernet1
+ description Path to Admin Switch
+ ip address 172.42.69.1 255.255.255.248
+ ip redirects
+ ip unreachables
+ ip proxy-arp
+ ip mtu 1500
+ ip pim join-prune-interval 60
+ ip pim dr-priority 1
+ ip pim query-interval 30
+ ip mfib forwarding input
+ ip mfib forwarding output
+ ip mfib cef input
+ ip mfib cef output
+ no ip flowspec
+ ip cef accounting non-recursive internal
+ ip load-sharing per-destination
+ ip route-cache cef
+ ip route-cache
+ ip split-horizon
+ ip igmp last-member-query-interval 1000
+ ip igmp last-member-query-count 2
+ ip igmp query-max-response-time 10
+ ip igmp v3-query-max-response-time 10
+ ip igmp version 2
+ ip igmp query-interval 60
+ ip igmp tcn query count 2
+ ip igmp tcn query interval 10
+ load-interval 300
+ carrier-delay 2
+ no shutdown
+ negotiation auto
+ no medium p2p
+ ipv6 nd reachable-time 0
+ ipv6 nd ns-interval 0
+ ipv6 nd dad attempts 1
+ ipv6 nd dad loopback detect
+ ipv6 nd prefix framed-ipv6-prefix
+ ipv6 nd nud igp
+ no ipv6 nd ra solicited unicast
+ ipv6 nd ra lifetime 1800
+ ipv6 nd ra interval 200
+ ipv6 mfib forwarding input
+ ipv6 mfib forwarding output
+ ipv6 mfib cef input
+ ipv6 mfib cef output
+ no ipv6 flowspec
+  ipv6 redirects
+  ipv6 unreachables
+ mpls mtu 1500
+ mpls mldp
+ snmp trap link-status
+ no flowspec group
+ autonomic
+ arp arpa
+ arp timeout 14400
+   clns route-cache
+ spanning-tree port-priority 128
+ spanning-tree cost 0
+ no h323-gateway voip interface
+ ethernet oam max-rate 10
+ ethernet oam min-rate 1 
+ ethernet oam remote-loopback timeout 2
+ ethernet oam timeout 5 
+ hold-queue 375 in
+ hold-queue 40 out
+ no bgp-policy accounting input
+ no bgp-policy accounting output
+ no bgp-policy accounting input source
+ no bgp-policy accounting output source
+ no bgp-policy source ip-prec-map
+ no bgp-policy source ip-qos-map
+ no bgp-policy destination ip-prec-map
+ no bgp-policy destination ip-qos-map
+interface GigabitEthernet2
+ description Path to Side A (Active HSRP Router)
+ ip address 10.69.42.1 255.255.255.248
+ ip redirects
+ ip unreachables
+ ip proxy-arp
+ ip mtu 1500
+ ip pim join-prune-interval 60
+ ip pim dr-priority 1
+ ip pim query-interval 30
+ ip mfib forwarding input
+ ip mfib forwarding output
+ ip mfib cef input
+ ip mfib cef output
+ no ip flowspec
+ ip cef accounting non-recursive internal
+ ip load-sharing per-destination
+ ip route-cache cef
+ ip route-cache
+ ip split-horizon
+ ip igmp last-member-query-interval 1000
+ ip igmp last-member-query-count 2
+ ip igmp query-max-response-time 10
+ ip igmp v3-query-max-response-time 10
+ ip igmp version 2
+ ip igmp query-interval 60
+ ip igmp tcn query count 2
+ ip igmp tcn query interval 10
+ ip ospf network broadcast
+ ip ospf resync-timeout 40
+ ip ospf dead-interval 40
+ ip ospf hello-interval 10
+ ip ospf priority 1
+ ip ospf retransmit-interval 5
+ ip ospf transmit-delay 1
+ no ip ospf flood-reduction
+ no ip ospf demand-circuit
+ no ip ospf mtu-ignore
+ no ip ospf database-filter all out
+ no ip ospf adjacency stagger
+ ip ospf fast-reroute per-prefix protection
+ ip ospf fast-reroute per-prefix candidate
+ no ip ospf prefix-attributes n-flag-clear
+ ip ospf cost 1
+ load-interval 300
+ carrier-delay 2
+ no shutdown
+ negotiation auto
+ no medium p2p
+ ipv6 nd reachable-time 0
+ ipv6 nd ns-interval 0
+ ipv6 nd dad attempts 1
+ ipv6 nd dad loopback detect
+ ipv6 nd prefix framed-ipv6-prefix
+ ipv6 nd nud igp
+ no ipv6 nd ra solicited unicast
+ ipv6 nd ra lifetime 1800
+ ipv6 nd ra interval 200
+ ipv6 mfib forwarding input
+ ipv6 mfib forwarding output
+ ipv6 mfib cef input
+ ipv6 mfib cef output
+ no ipv6 flowspec
+  ipv6 redirects
+  ipv6 unreachables
+ mpls mtu 1500
+ mpls mldp
+ snmp trap link-status
+ no flowspec group
+ autonomic
+ arp arpa
+ arp timeout 14400
+   clns route-cache
+ spanning-tree port-priority 128
+ spanning-tree cost 0
+ no h323-gateway voip interface
+ ethernet oam max-rate 10
+ ethernet oam min-rate 1 
+ ethernet oam remote-loopback timeout 2
+ ethernet oam timeout 5 
+ hold-queue 375 in
+ hold-queue 40 out
+ no bgp-policy accounting input
+ no bgp-policy accounting output
+ no bgp-policy accounting input source
+ no bgp-policy accounting output source
+ no bgp-policy source ip-prec-map
+ no bgp-policy source ip-qos-map
+ no bgp-policy destination ip-prec-map
+ no bgp-policy destination ip-qos-map
+interface GigabitEthernet3
+ description Path to Side B (Standby HSRP Router)
+ ip address 10.69.43.1 255.255.255.248
+ ip redirects
+ ip unreachables
+ ip proxy-arp
+ ip mtu 1500
+ ip pim join-prune-interval 60
+ ip pim dr-priority 1
+ ip pim query-interval 30
+ ip mfib forwarding input
+ ip mfib forwarding output
+ ip mfib cef input
+ ip mfib cef output
+ no ip flowspec
+ ip cef accounting non-recursive internal
+ ip load-sharing per-destination
+ ip route-cache cef
+ ip route-cache
+ ip split-horizon
+ ip igmp last-member-query-interval 1000
+ ip igmp last-member-query-count 2
+ ip igmp query-max-response-time 10
+ ip igmp v3-query-max-response-time 10
+ ip igmp version 2
+ ip igmp query-interval 60
+ ip igmp tcn query count 2
+ ip igmp tcn query interval 10
+ ip ospf network broadcast
+ ip ospf resync-timeout 40
+ ip ospf dead-interval 40
+ ip ospf hello-interval 10
+ ip ospf priority 1
+ ip ospf retransmit-interval 5
+ ip ospf transmit-delay 1
+ no ip ospf flood-reduction
+ no ip ospf demand-circuit
+ no ip ospf mtu-ignore
+ no ip ospf database-filter all out
+ no ip ospf adjacency stagger
+ ip ospf fast-reroute per-prefix protection
+ ip ospf fast-reroute per-prefix candidate
+ no ip ospf prefix-attributes n-flag-clear
+ ip ospf cost 1
+ load-interval 300
+ carrier-delay 2
+ no shutdown
+ speed 1000
+ no negotiation auto
+ no medium p2p
+ ipv6 nd reachable-time 0
+ ipv6 nd ns-interval 0
+ ipv6 nd dad attempts 1
+ ipv6 nd dad loopback detect
+ ipv6 nd prefix framed-ipv6-prefix
+ ipv6 nd nud igp
+ no ipv6 nd ra solicited unicast
+ ipv6 nd ra lifetime 1800
+ ipv6 nd ra interval 200
+ ipv6 mfib forwarding input
+ ipv6 mfib forwarding output
+ ipv6 mfib cef input
+ ipv6 mfib cef output
+ no ipv6 flowspec
+  ipv6 redirects
+  ipv6 unreachables
+ mpls mtu 1500
+ mpls mldp
+ snmp trap link-status
+ no flowspec group
+ autonomic
+ arp arpa
+ arp timeout 14400
+   clns route-cache
+ spanning-tree port-priority 128
+ spanning-tree cost 0
+ no h323-gateway voip interface
+ ethernet oam max-rate 10
+ ethernet oam min-rate 1 
+ ethernet oam remote-loopback timeout 2
+ ethernet oam timeout 5 
+ hold-queue 375 in
+ hold-queue 40 out
+ no bgp-policy accounting input
+ no bgp-policy accounting output
+ no bgp-policy accounting input source
+ no bgp-policy accounting output source
+ no bgp-policy source ip-prec-map
+ no bgp-policy source ip-qos-map
+ no bgp-policy destination ip-prec-map
+ no bgp-policy destination ip-qos-map
+ no interface-id snmp-if-index
+ no bfd all-interfaces
+no logging source-interface
+snmp mib pimstdmib notification-period interface-election 65535
+MainRouter#
