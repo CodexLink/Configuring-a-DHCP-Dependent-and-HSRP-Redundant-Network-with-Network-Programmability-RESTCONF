@@ -36,8 +36,7 @@ As a final requirement for the DevOps (CPE 028), you will be required to configu
 
 ### Topology
 
-The topology contains
-[![Network Topology](https://github.com/CodexLink/devops_final_case_study/blob/latest/media/network_topology.png)]()
+[![Network Topology](https://github.com/CodexLink/devops_final_case_study/blob/latest/media/network_topology.png)](https://github.com/CodexLink/devops_final_case_study)
 
 ### Devices in Topology
 
