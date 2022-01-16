@@ -24,6 +24,7 @@ Each folder in this repository contains use-case and its context were categorize
 
 - ***media/*** — Contains images that is related to this case study.
 - ***pre-configs/*** — Contains the configuration before the case study execution of the devices.
+- ***project*** — Contains the GNS 3 project-file ***except the dynamips and virtualbox files.*** *Stored for proof of work.* Note that this may not work as intended since GNS 3 is very reliant on the current configurations of your VirtualBox or VMware. I advise against using this if you don't want to expect potential conflicts based on my configuration. But who knows?
 - ***restconf/*** — Contains json queries incorporated on a particular configuration and endpoint. **Run in Postman** indicated from the top allows you to access the collections that I published in Postman, which contains the context of this folder. It's way easier than copy-pasting the commands from this folder.
 - ***results/*** — Contains the produced results from running the `run-tests.sh`
 
