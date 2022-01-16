@@ -36,9 +36,13 @@ The following context provides more information about the case study.
 
 As a final requirement for the DevOps (CPE 028), you will be required to configure a topology with RESTCONF under one territory that heavily relies on DHCP servers for addressing, with redundancy added for both DHCP and HSRP, incorporated from one another; and also OSPF as an alternative for IP routing. Default and static configuration are prohibited from this activity.
 
-### Topology
+### Topology (Initial)
 
-[![Network Topology](https://github.com/CodexLink/devops_final_case_study/blob/latest/media/network_topology.png)](https://github.com/CodexLink/devops_final_case_study)
+[![Network Topology, Initial](https://github.com/CodexLink/devops_final_case_study/blob/latest/media/network_topology_initial.png)](https://github.com/CodexLink/devops_final_case_study)
+
+### Topology (Fully-Working, No Labels)
+
+[![Network Topology, Fully-Working](https://github.com/CodexLink/devops_final_case_study/blob/latest/media/network_topology_fully_working.png)](https://github.com/CodexLink/devops_final_case_study)
 
 ### Devices in Topology
 
