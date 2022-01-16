@@ -44,7 +44,19 @@ The topology has the following devices and its configuration:
 
 - **3x** *CSR1000v VM* — Configuration: 2.5GB of RAM, 3x Paravirtualized Network Drivers (virtio-net)
 - **3x** *DEVASC-VM* — SideA and SideB ClientN: 512 MB of RAM, Admin Client: 2048 MB, can be lowered.
-- **3x** *Ethernet Switch* — With VLAN limited to N of devices connected.
+- **3x** *Ethernet Switch* — With VLANs limited to N of devices connected.
+
+### Pre-configuration
+
+To be documented later. Right after the generation of documentation in Google Docs.
+
+### RESTCONF Overview
+
+To be documented later. Right after the generation of documentation in Google Docs.
+
+### Generation of Test Cases
+
+To be documented later. Right after the generation of documentation in Google Docs.
 
 ## Resources
 
