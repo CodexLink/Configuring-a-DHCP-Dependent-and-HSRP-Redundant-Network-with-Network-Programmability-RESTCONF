@@ -23,8 +23,9 @@ When attempting to do this case study, please consider the following:
 Each folder in this repository contains use-case and its context were categorized.
 
 - ***media/*** — Contains images that is related to this case study.
+- ***pre-configs/*** — Contains the configuration before the case study execution of the devices.
+- ***restconf/*** — Contains json queries incorporated on a particular configuration and endpoint. **Run in Postman** indicated from the top allows you to access the collections that I published in Postman, which contains the context of this folder. It's way easier than copy-pasting the commands from this folder.
 - ***results/*** — Contains the produced results from running the `run-tests.sh`
-- ***restconf/*** — Contains json queries incorporated on a particular configuration and endpoint.
 
 ## Final Case Study Context
 

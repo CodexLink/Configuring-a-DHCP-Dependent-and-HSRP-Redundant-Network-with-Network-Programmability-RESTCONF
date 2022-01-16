@@ -136,20 +136,20 @@ genie parse "show running-config all | sec router" --testbed-file $TESTBED_FILE_
 echo "Step 1.17 | SideA_Router's HSRP Brief"
 genie parse "show standby brief" --testbed-file $TESTBED_FILE_PATH --device $SIDEA_DEV_NAME --output $BASELINE_FOLDER/$SIDEA_DEV_NAME/hsrp-brief
 
-echo "Step 1.19 | SideA_Router's HSRP Configuration ..."
+echo "Step 1.18 | SideA_Router's HSRP Configuration ..."
 genie parse "show running-config all | sec standby" --testbed-file $TESTBED_FILE_PATH --device $SIDEA_DEV_NAME --output $BASELINE_FOLDER/$SIDEA_DEV_NAME/hsrp-config --raw
 
 # Side B
-echo "Step 1.20 | SideB_Router's DHCP Pool ..."
+echo "Step 1.19 | SideB_Router's DHCP Pool ..."
 genie parse "show running-config all | sec dhcp pool" --testbed-file $TESTBED_FILE_PATH --device $SIDEB_DEV_NAME --output $BASELINE_FOLDER/$SIDEB_DEV_NAME/dhcp-pool --raw
 
-echo "Step 1.21 | SideB_Router's DHCP Configuration ..."
+echo "Step 1.20 | SideB_Router's DHCP Configuration ..."
 genie parse "show running-config all | sec dhcp" --testbed-file $TESTBED_FILE_PATH --device $SIDEB_DEV_NAME --output $BASELINE_FOLDER/$SIDEB_DEV_NAME/dhcp-config --raw
 
-echo "Step 1.22 | SideB_Router's Interface ..."
+echo "Step 1.21 | SideB_Router's Interface ..."
 genie parse "show interfaces" --testbed-file $TESTBED_FILE_PATH --device $SIDEB_DEV_NAME --output $BASELINE_FOLDER/$SIDEB_DEV_NAME/ip-interface-info
 
-echo "Step 1.23 | SideB_Router's Interface Configuration ..."
+echo "Step 1.22 | SideB_Router's Interface Configuration ..."
 genie parse "show running-config all | sec interface" --testbed-file $TESTBED_FILE_PATH --device $SIDEB_DEV_NAME --output $BASELINE_FOLDER/$SIDEB_DEV_NAME/ip-interface-config
 
 echo "Step 1.23 | SideB_Router's IP Routes ..."
@@ -167,7 +167,7 @@ genie parse "show running-config all | sec router" --testbed-file $TESTBED_FILE_
 echo "Step 1.27 | SideB_Router's HSRP Brief"
 genie parse "show standby brief" --testbed-file $TESTBED_FILE_PATH --device $SIDEB_DEV_NAME --output $BASELINE_FOLDER/$SIDEB_DEV_NAME/hsrp-brief
 
-echo "Step 1.29 | SideB_Router's HSRP Configuration ..."
+echo "Step 1.28 | SideB_Router's HSRP Configuration ..."
 genie parse "show running-config all | sec standby" --testbed-file $TESTBED_FILE_PATH --device $SIDEB_DEV_NAME --output $BASELINE_FOLDER/$SIDEB_DEV_NAME/hsrp-config --raw
 
 echo -e "\nStep 2 | Generating Device Configurations Comparisons.\n"

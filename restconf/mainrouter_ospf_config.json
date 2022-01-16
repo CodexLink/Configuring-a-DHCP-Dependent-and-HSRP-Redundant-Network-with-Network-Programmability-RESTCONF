@@ -1,0 +1,28 @@
+// MainRouter: OSPF Configuration
+// Authorization Context | Username: cisco, Password: cisco123!
+// Headers | Accept and Content-Type: application/yang-data+json
+// Method and Endpoint: PATCH | https://172.42.69.1/restconf/data/Cisco-IOS-XE-native:native/router/ospf
+
+{
+    "Cisco-IOS-XE-ospf:ospf": [
+        {
+            "id": 1,
+            "router-id": "5.5.5.5",
+            "default-information": {
+                "originate": {}
+            },
+            "network": [
+                {
+                    "ip": "10.69.42.0",
+                    "mask": "0.0.0.3",
+                    "area": 0
+                },
+                {
+                    "ip": "10.69.43.0",
+                    "mask": "0.0.0.3",
+                    "area": 0
+                }
+            ]
+        }
+    ]
+}

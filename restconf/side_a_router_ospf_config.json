@@ -1,0 +1,35 @@
+// Side A Router: Interface + HSRP Configuration
+// Authorization Context | Username: cisco, Password: cisco123!
+// Headers | Accept and Content-Type: application/yang-data+json
+// Method and Endpoint: PATCH | https://10.69.42.2/restconf/data/Cisco-IOS-XE-native:native/router/ospf
+
+{
+    "Cisco-IOS-XE-ospf:ospf": [
+        {
+            "id": 1,
+            "router-id": "3.3.3.3",
+            "network": [
+                {
+                    "ip": "10.69.42.0",
+                    "mask": "0.0.0.3",
+                    "area": 0
+                },
+                {
+                    "ip": "10.69.43.0",
+                    "mask": "0.0.0.3",
+                    "area": 0
+                },
+                {
+                    "ip": "10.69.44.0",
+                    "mask": "0.0.0.3",
+                    "area": 0
+                },
+                {
+                    "ip": "172.16.30.0",
+                    "mask": "0.0.0.255",
+                    "area": 0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+// MainRouter: DHCP Configuration
+// Authorization Context | Username: cisco, Password: cisco123!
+// Headers | Accept and Content-Type: application/yang-data+json
+// Method and Endpoint: PUT | https://172.42.69.1/restconf/data/Cisco-IOS-XE-native:native/ip/dhcp
+
+{
+    "Cisco-IOS-XE-native:dhcp": {
+        "Cisco-IOS-XE-dhcp:pool": [
+            {
+                "id": "ADMIN_ACCESS_LAN_IP_POOL",
+                "default-router": {
+                    "default-router-list": [
+                        "172.42.69.1"
+                    ]
+                },
+                "domain-name": "final_case_study.com",
+                "network": {
+                    "primary-network": {
+                        "number": "172.42.69.0",
+                        "mask": "255.255.255.240"
+                    }
+                }
+            },
+            {
+                "id": "ROUTER_PRIMARY_RESERVED_POOL",
+                "default-router": {
+                    "default-router-list": [
+                        "10.69.42.1"
+                    ]
+                },
+                "domain-name": "final_case_study.com",
+                "network": {
+                    "primary-network": {
+                        "number": "10.69.42.0",
+                        "mask": "255.255.255.248"
+                    }
+                }
+            },
+                {
+                "id": "ROUTER_SECONDARY_RESERVED_POOL",
+                "default-router": {
+                    "default-router-list": [
+                        "10.69.43.1"
+                    ]
+                },
+                "domain-name": "final_case_study.com",
+                "network": {
+                    "primary-network": {
+                        "number": "10.69.43.0",
+                        "mask": "255.255.255.248"
+                    }
+                }
+            }
+        ]
+    }
+}
