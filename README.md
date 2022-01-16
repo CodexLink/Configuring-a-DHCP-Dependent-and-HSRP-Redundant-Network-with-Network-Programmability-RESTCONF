@@ -1,11 +1,16 @@
-# Configuring a DHCP-Dependent and Redundant Network with Network Programmability (RESTCONF)
+# DevOps `(CPE 028)` Final Case Study
+
+A Final Case Study of DevOps - Application of Network Automation and Programmability, also known as: **Configuring a DHCP-Dependent and Redundant Network with Network Programmability (*RESTCONF*)**
+
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/15624637-ec62310f-f31c-41b4-80af-ac431ffe342e?action=collection%2Ffork&collection-url=entityId%3D15624637-ec62310f-f31c-41b4-80af-ac431ffe342e%26entityType%3Dcollection%26workspaceId%3D1749f222-a6e9-422b-96ef-5fdd04dfd9f5)
 
-A Final Case Study of DevOps - Application of Network Automation and Programmability
-
-
 ## Introduction
-This case study is a laboratory activity that utilizes the capabilities of RESTCONF on cisco device with IOS XE Software. Network topics is OSPF for routing, DHCP for automatic IP assignment and HSRP for redundant connections.
+
+This repository (case study) contains the resources needed to accomplish a laboratory activity that utilizes the capabilities of RESTCONF on Cisco Devices equipped with IOS-XE software. This repository also contains the generated outputs produced from the script.
+
+## Final Case Study Context
+
+### Topology
 
 ## Repository Folder Index
 ?
@@ -39,5 +44,3 @@ These are the links that I used. Will fix later.
 - https://www.ripe.net/about-us/press-centre/IPv4CIDRChart_2015.pdf
 - https://blogs.cisco.com/developer/pyats-genie-beneath-the-surface
 - https://community.cisco.com/t5/networking-documents/ospf-routers-do-not-form-neighbor-relationship-due-to-a-mismatch/ta-p/3131411
-
-
